@@ -1,17 +1,21 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "th_invoice_partner_bank_id",
+    'name': "Mostrar Cuenta Para FCE AFIP Argentina",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
-    'description': """
-        Long description of module's purpose
+        Muestra el campo desplegable en la pestaña Otra Informacion
+        para seleccionar la cuenta bancaria a informar en la FCE de
+        AFIP Argentina
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'description': """
+        Muestra el campo desplegable en la pestaña Otra Informacion
+        para seleccionar la cuenta bancaria a informar en la FCE de
+        AFIP Argentina
+    """,
+
+    'author': "TRIX.Hosting",
+    'website': "https://trix.hosting",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
@@ -20,16 +24,19 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': [
+        'base',
+        'account',
+    ],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
-        'views/templates.xml',
+        # 'views/templates.xml',
     ],
     # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    # 'demo': [
+        # 'demo/demo.xml',
+    # ],
 }
